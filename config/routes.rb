@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   namespace :presentations do
     get 'living_style_guide_driven_development', to: 'living_style_guide_driven_development#index'
     get 'living-style-guide-driven-development', to: 'living_style_guide_driven_development#index'
+    get 'ember_modal_dialog_intro', to: 'ember_modal_dialog_intro#index'
+    get 'ember-modal-dialog-intro', to: 'ember_modal_dialog_intro#index'
   end
   root 'site#index'
 end
