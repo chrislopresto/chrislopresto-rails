@@ -1,0 +1,35 @@
+.ResumeContactInfo {
+  border: solid 1px $md-teal-400;
+  border-radius: 2px;
+  float: right;
+  font-size: .8rem;
+  margin: 0 0 20px 20px;
+  line-height: 1.3rem;
+
+  .Resume & {
+    padding: 15px 10px;
+
+    @media (max-width: $width-mobile-landscape) {
+      float: left;
+      margin: 0 0 20px;
+    }
+  }
+
+  .fa {
+    padding-right: 3px;
+  }
+
+  li {
+    display: block;
+  }
+
+  li:before {
+    content: '';
+  }
+
+  &-item {
+    &--social {
+      font-size: .8rem;
+    }
+  }
+}

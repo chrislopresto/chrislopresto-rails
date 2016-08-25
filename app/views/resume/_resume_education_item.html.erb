@@ -1,0 +1,17 @@
+<div class="ResumeEductionItem">
+  <div class="ResumeEducationItem-item">
+    <div class="ResumeEducationItem-logo">
+      <%= image_tag logo_src %>
+    </div>
+    <div class="ResumeEducationItem-where">
+      <h4 class="ResumeEducationItem-name--<%= slug %>">
+        <%= name %>
+      </h4>
+      <p><%= where %></p>
+      <p>
+        <%= yield %>
+      </p>
+    </div>
+    <div class="ResumeEducationItem-when"><%= from %> - <%= to %></div>
+  </div>
+</div>

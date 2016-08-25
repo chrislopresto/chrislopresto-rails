@@ -1,0 +1,16 @@
+<% as ||= '' %>
+<div class="ResumeWorkItem">
+  <h2><%= where %></h2>
+  <div class='work-item-overview'>
+    <div class='when'><%= from %> - <%= to %></div>
+    <div class='synopsis'>
+      <div class='learn'><%= learned %></div>
+      <% if as.present? %>
+        <div class='role'>as <span class='title'><%= as %></span></div>
+      <% end %>
+    </div>
+  </div>
+
+  <%= render partial: content %>
+  <%= yield %>
+</div>

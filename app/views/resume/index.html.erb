@@ -1,0 +1,128 @@
+<div class="Resume">
+  <%= render partial: "resume/resume_header" %>
+
+  <div class="Resume-body">
+    <%= render partial: "resume/resume_contact_info" %>
+    <%= render partial: "resume/resume_intro" %>
+
+    <%= render partial: "resume/resume_work_item", locals: {
+      where: 'Betterment',
+      from: 'July 2016',
+      to: 'Present',
+      learned: 'I currently work at Betterment as a lead software engineer',
+      content: 'resume/work_items/betterment'
+    } %>
+
+    <%= render partial: "resume/resume_work_item", locals: {
+      where: 'Yapp / Yapp Labs',
+      from: 'March 2015',
+      to: 'June 2016',
+      learned: 'Where I concentrated on collaboration between engineers and designers',
+      content: 'resume/work_items/yapp'
+    } %>
+
+    <%= render partial: "resume/resume_work_item", locals: {
+      where: 'Elegant and Tasteful',
+      from: 'September 2014',
+      to: 'March 2015',
+      learned: 'Where I embarked on a period of freelance consulting and learned about NASCAR',
+      content: 'resume/work_items/elegant_and_tasteful'
+    } %>
+
+    <div class="ResumePageBreak"></div>
+    <%= render partial: "resume/resume_work_item", locals: {
+      where: 'Plyfe',
+      from: 'September 2011',
+      to: 'September 2014',
+      learned: 'Where I co-founded a startup and delved into product development, user experience, and company communication',
+      as: 'CTO & Co-Founder',
+      content: 'resume/work_items/plyfe'
+    } %>
+
+    <%= render partial: "resume/resume_work_item", locals: {
+      where: 'InRhythm',
+      from: 'December 2010',
+      to: 'August 2011',
+      learned: 'Where I consulted on technical and product development processes',
+      as: 'Director of Product Development',
+      content: 'resume/work_items/in_rhythm'
+    } %>
+
+    <%= render partial: "resume/resume_work_item", locals: {
+      where: 'News Corp',
+      from: 'June 2010',
+      to: 'September 2010',
+      learned: 'Where I consulted on Skiff IP acquisition',
+      content: 'resume/work_items/news_corp'
+    } %>
+
+    <div class="ResumePageBreak"></div>
+    <%= render partial: "resume/resume_work_item", locals: {
+      where: 'Skiff',
+      from: 'May 2008',
+      to: 'June 2010',
+      learned: 'Where I led teams and learned about ePubs and the publishing industry',
+      as: 'Director of Content Publishing',
+      content: 'resume/work_items/skiff'
+    } %>
+
+    <%= render partial: "resume/resume_work_item", locals: {
+      where: 'Microdesk',
+      from: 'April 2005',
+      to: 'May 2008',
+      learned: 'Where I led projects and learned about the Patriot Missile System',
+      as: 'Lead Software Engineer & Project Manager',
+      content: 'resume/work_items/microdesk'
+    } %>
+
+    <div class="ResumePageBreak"></div>
+    <%= render partial: "resume/resume_work_item", locals: {
+      where: 'Fantastic Damage',
+      from: 'April 2003',
+      to: 'April 2005',
+      learned: 'Where I started a business and learned about requirements discovery',
+      as: 'Co-Founder & Software Engineer',
+      content: 'resume/work_items/fantastic_damage'
+    } %>
+
+    <%= render partial: "resume/resume_work_item", locals: {
+      where: 'MBNA',
+      from: 'August 2002',
+      to: 'March 2004',
+      learned: 'Where I learned about big datasets and the benefits of a healthy corporate culture',
+      as: 'Software Engineer',
+      content: 'resume/work_items/mbna'
+    } %>
+
+    <div class="ResumePageBreak"></div>
+    <%= render partial: "resume/music" %>
+
+    <%= render partial: "resume/miscellany" %>
+
+    <h1>Education</h1>
+    <%= render layout: "resume/resume_education_item", locals: {
+      slug: 'rutgers',
+      logo_src: 'logo-rutgers.png',
+      name: 'Rutgers University',
+      where: 'New Brunswick, NJ',
+      from: '1998',
+      to: '2002'
+    } do %>
+      Bachelor of Science in <span class='major'>Computer Science</span><br>
+      Bachelor of Music (piano) in <span class='major'>Jazz Studies</span>
+    <% end %>
+
+    <%= render layout: "resume/resume_education_item", locals: {
+      slug: 'salesianum',
+      logo_src: 'logo-salesianum.png',
+      name: 'Salesianum School',
+      where: 'Wilmington, DE',
+      from: '1994',
+      to: '1998'
+    } do %>
+      <em>Tenui Nec Dimittam</em>
+    <% end %>
+
+  </div>
+
+</div>
