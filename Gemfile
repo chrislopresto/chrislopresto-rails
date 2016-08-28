@@ -28,3 +28,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'material_design_lite-sass'
 gem 'font-awesome-sass', '~> 4.6.2'
+gem 'webpack-rails', '~> 0.9.9'
+
+gem 'foreman'
