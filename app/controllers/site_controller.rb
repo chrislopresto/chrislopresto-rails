@@ -6,5 +6,8 @@ class SiteController < ApplicationController
       name: 'Chris LoPresto',
       traits: ['software engineer', 'musician']
     }
+    @highcharts_props = {
+      demoType: 'Regular'
+    }
   end
 end
