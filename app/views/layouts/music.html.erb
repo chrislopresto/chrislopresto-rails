@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chris LoPresto | Music</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <meta name="description" content="Chris LoPresto | Musician">
+    <meta property="og:description" content="Chris LoPresto | Musician">
+    <meta property="og:image" content="get.chrislopresto.com/chris-lopresto-headshot.jpg">
+    <meta property="og:site_name" content="Chris LoPresto">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@chrislopresto">
+    <meta name="twitter:description" content="Musician">
+    <meta name="twitter:title" content="Chris LoPresto">
+    <meta name="twitter:image" content="get.chrislopresto.com/chris-lopresto-headshot.jpg">
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
