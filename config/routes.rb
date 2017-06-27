@@ -13,6 +13,8 @@ Rails.application.routes.draw do
     get 'living-style-guide-driven-development', to: 'living_style_guide_driven_development#index'
     get 'ember_modal_dialog_intro', to: 'ember_modal_dialog_intro#index'
     get 'ember-modal-dialog-intro', to: 'ember_modal_dialog_intro#index'
+    get 'betterment_rebranding_bonanza', to: 'betterment_rebranding_bonanza#index'
+    get 'betterment-rebranding-bonanza', to: 'betterment_rebranding_bonanza#index'
   end
 
   root 'site#index'
