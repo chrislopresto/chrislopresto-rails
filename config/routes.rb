@@ -15,6 +15,8 @@ Rails.application.routes.draw do
     get 'ember-modal-dialog-intro', to: 'ember_modal_dialog_intro#index'
     get 'betterment_rebranding_bonanza', to: 'betterment_rebranding_bonanza#index'
     get 'betterment-rebranding-bonanza', to: 'betterment_rebranding_bonanza#index'
+    get 'hot-swapping-our-rails-front-end-in-secret', to: 'betterment_rebranding_bonanza#index'
+    get 'hot_swapping_our_rails_front_end_in_secret', to: 'betterment_rebranding_bonanza#index'
   end
 
   root 'site#index'
