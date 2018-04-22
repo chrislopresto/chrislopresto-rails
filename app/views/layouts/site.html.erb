@@ -6,9 +6,9 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_pack_tag 'application' %>
+    <%= stylesheet_pack_tag 'application' %>
 
     <meta name="description" content="Chris LoPresto | Software Engineer, Musician, Leader">
     <meta property="og:description" content="Chris LoPresto | Software Engineer, Musician, Leader">
@@ -26,12 +26,12 @@
       <%= yield %>
 
       <p>
-        <a class="text-indigo" target='_blank' href='https://twitter.com/chrislopresto'><%= icon 'twitter' %></a>
-        <a class="text-indigo" target='_blank' href='https://facebook.com/chrislopresto'><%= icon 'facebook' %></a>
-        <a class="text-indigo" target='_blank' href='https://instagram.com/chrislopresto'><%= icon 'instagram' %></a>
-        <a class="text-indigo" target='_blank' href='https://github.com/chrislopresto'><%= icon 'github' %></a>
-        <a class="text-indigo" target='_blank' href='https://www.linkedin.com/in/chrislopresto/'><%= icon 'linkedin' %></a>
-        <a class="text-indigo" href='/resume'><%= icon 'briefcase' %></a>
+        <a class="text-teal-dark" target='_blank' href='https://twitter.com/chrislopresto'><%= icon 'twitter' %></a>
+        <a class="text-teal-dark" target='_blank' href='https://facebook.com/chrislopresto'><%= icon 'facebook' %></a>
+        <a class="text-teal-dark" target='_blank' href='https://instagram.com/chrislopresto'><%= icon 'instagram' %></a>
+        <a class="text-teal-dark" target='_blank' href='https://github.com/chrislopresto'><%= icon 'github' %></a>
+        <a class="text-teal-dark" target='_blank' href='https://www.linkedin.com/in/chrislopresto/'><%= icon 'linkedin' %></a>
+        <a class="text-teal-dark" href='/resume'><%= icon 'briefcase' %></a>
       </p>
     </div>
   </body>
