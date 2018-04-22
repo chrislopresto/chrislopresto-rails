@@ -4,11 +4,12 @@
   <title><%= page_title %></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
   <%= ember_app_meta_tags %>
   <%= ember_app_link_tags %>
 
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+  <%= stylesheet_link_tag    'application', media: 'all' %>
 </head>
 <body>
   <%= yield %>

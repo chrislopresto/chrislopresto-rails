@@ -11,7 +11,7 @@ module EmberAppFromRedis
 
   included do
     class_attribute :ember_app_name
-    before_filter :setup_app
+    before_action :setup_app
   end
 
   def ember_app_name

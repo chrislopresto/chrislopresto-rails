@@ -4,9 +4,11 @@
     <title>Chris LoPresto</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all' %>
 
     <meta name="description" content="Chris LoPresto | Software Engineer, Musician, Leader">
     <meta property="og:description" content="Chris LoPresto | Software Engineer, Musician, Leader">
@@ -20,53 +22,17 @@
   </head>
 
   <body>
-    <!-- Always shows a header, even in smaller screens. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">Chris LoPresto</span>
-          <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
-          <!-- Navigation. We hide it in small screens. -->
-          <!-- <nav class="mdl-navigation mdl-layout--large-screen-only">
-            <a class="mdl-navigation__link" href="">Link A</a>
-            <a class="mdl-navigation__link" href="">Link</a>
-            <a class="mdl-navigation__link" href="">Link</a>
-            <a class="mdl-navigation__link" href="">Link</a>
-          </nav> -->
-        </div>
-      </header>
-      <!-- <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">Title</span>
-        <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Link A</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-        </nav>
-      </div> -->
-      <main class="mdl-layout__content">
-        <div class="page-content">
-          <%= yield %>
-        </div>
-      </main>
-      <footer class="mdl-mini-footer">
-        <div class="mdl-mini-footer__left-section">
-          <div class="mdl-logo">Don't Panic.</div>
-          <ul class="mdl-mini-footer__link-list">
-            <li><a target='_blank' href='https://twitter.com/chrislopresto'><%= icon 'twitter' %></a></li>
-            <li><a target='_blank' href='https://facebook.com/chrislopresto'><%= icon 'facebook' %></a></li>
-            <li><a target='_blank' href='https://instagram.com/chrislopresto'><%= icon 'instagram' %></a></li>
-            <li><a target='_blank' href='https://github.com/chrislopresto'><%= icon 'github' %></a></li>
-            <li><a target='_blank' href='https://www.linkedin.com/in/chrislopresto/'><%= icon 'linkedin' %></a></li>
-            <li><a href='/resume'><%= icon 'briefcase' %></a></li>
-          </ul>
-        </div>
-        <div class="mdl-mini-footer__right-section">
-          &copy; <%= Time.now.year %> Chris LoPresto
-        </div>
-      </footer>
+    <div class="pl-2">
+      <%= yield %>
+
+      <p>
+        <a class="text-indigo" target='_blank' href='https://twitter.com/chrislopresto'><%= icon 'twitter' %></a>
+        <a class="text-indigo" target='_blank' href='https://facebook.com/chrislopresto'><%= icon 'facebook' %></a>
+        <a class="text-indigo" target='_blank' href='https://instagram.com/chrislopresto'><%= icon 'instagram' %></a>
+        <a class="text-indigo" target='_blank' href='https://github.com/chrislopresto'><%= icon 'github' %></a>
+        <a class="text-indigo" target='_blank' href='https://www.linkedin.com/in/chrislopresto/'><%= icon 'linkedin' %></a>
+        <a class="text-indigo" href='/resume'><%= icon 'briefcase' %></a>
+      </p>
     </div>
   </body>
 </html>
