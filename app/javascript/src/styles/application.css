@@ -1,9 +1,13 @@
 @import 'settings/core.css';
 
-@import 'generic/reset.css';
+/* Tailwind Preflight includes normalize.css
+   https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css */
+@import 'tailwindcss/preflight';
+@import 'generic/print-reset.css';
 
 @import 'elements/core.css';
 
 @import 'tailwindcss/components';
+@import 'components/resume';
 
 @import 'tailwindcss/utilities';

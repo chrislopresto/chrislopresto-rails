@@ -17,10 +17,6 @@ $color-primary: #03a9f4 !default;
 $color-primary-dark: #0288d1 !default;
 $color-accent: #ffd740 !default;
 
-.page-content {
-  padding: 0 16px;
-}
-
 @import "components/resume";
 @import "components/resume_page_break";
 @import "components/resume_header";
@@ -30,72 +26,3 @@ $color-accent: #ffd740 !default;
 
 @import "font-awesome-sprockets";
 @import "font-awesome";
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-    *,
-    *:before,
-    *:after,
-    *:first-letter {
-        background: inherit !important;
-        color: inherit !important; /* Black prints faster: http://www.sanbeiji.com/archives/953 */
-        box-shadow: inherit !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: inherit;
-    }
-
-    a[href]:after {
-        content: "";
-    }
-
-    abbr[title]:after {
-        content: "";
-    }
-
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-    pre,
-    blockquote {
-        border: inherit;
-        page-break-inside: avoid;
-    }
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-    thead {
-        display: table-header-group;
-    }
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-    img {
-        max-width: 100% !important;
-    }
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
