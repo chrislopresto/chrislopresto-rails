@@ -9,4 +9,5 @@
 
 import '../src/styles/application.css';
 
-console.log('Hello World from Webpacker')
+import '../src/images/logo-rutgers.png';
+import '../src/images/logo-salesianum.png';

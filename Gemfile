@@ -23,7 +23,4 @@ end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'font-awesome-sass', '~> 4.6.2'
-# gem 'material_design_lite-sass'
 gem 'redis', '~> 3.2'
-gem 'sass-rails', '~> 5.0'
