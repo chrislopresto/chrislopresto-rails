@@ -8,6 +8,7 @@
 @import 'elements/core.css';
 
 @import 'tailwindcss/components';
+@import '../../components/intro/intro';
 @import 'components/resume';
 @import 'components/resume-page-break';
 @import 'components/resume-header';

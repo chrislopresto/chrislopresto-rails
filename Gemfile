@@ -23,4 +23,5 @@ end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+gem 'komponent'
 gem 'redis', '~> 3.2'

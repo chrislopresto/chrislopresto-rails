@@ -1,3 +1,12 @@
 body {
   font-family: var(--fontPrimary);
 }
+
+h1,
+h2,
+h3,
+h4,
+p,
+br {
+  @apply .mb-2;
+}

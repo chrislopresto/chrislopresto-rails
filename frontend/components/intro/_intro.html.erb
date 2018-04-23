@@ -1,0 +1,18 @@
+<div data-controller="intro" class="Intro p-4 rounded-sm">
+  <h1>Hello.</h1>
+  <p>My name is Chris LoPresto.</p>
+  <% if @mode == 'music' %>
+    <p class="mb-0">I am a musician.</p>
+  <% else %>
+    <p>I am a software engineer and musician.</p>
+
+    <p class="mb-0">
+      <a class="text-teal-dark" target='_blank' href='https://twitter.com/chrislopresto'><i class="fab fa-twitter"></i></a>
+      <a class="text-teal-dark" target='_blank' href='https://facebook.com/chrislopresto'><i class="fab fa-facebook"></i></a>
+      <a class="text-teal-dark" target='_blank' href='https://instagram.com/chrislopresto'><i class="fab fa-instagram"></i></a>
+      <a class="text-teal-dark" target='_blank' href='https://github.com/chrislopresto'><i class="fab fa-github"></i></a>
+      <a class="text-teal-dark" target='_blank' href='https://www.linkedin.com/in/chrislopresto/'><i class="fab fa-linkedin"></i></a>
+      <a class="text-teal-dark" href='/resume'><i class="fas fa-briefcase"></i></a>
+    </p>
+  <% end %>
+</div>

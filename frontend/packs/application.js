@@ -7,7 +7,8 @@
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
 
-import '../src/styles/application.css';
+import 'src/styles/application.css';
 
-import '../src/images/logo-rutgers.png';
-import '../src/images/logo-salesianum.png';
+import 'src/images/logo-rutgers.png';
+import 'src/images/logo-salesianum.png';
+import 'components';
