@@ -128,9 +128,11 @@ let colors = {
   'pink-lighter': '#ffbbca',
   'pink-lightest': '#ffebef',
 
+  'md-grey-50': '#fafafa',
   'md-grey-800': '#424242',
   'md-grey-200': '#eeeeee',
   'md-grey-500': '#9e9e9e',
+  'md-grey-900': '#212121',
   'md-teal-800': '#00695c',
   'md-teal-600': '#00897b',
   'md-teal-400': '#26a69a',

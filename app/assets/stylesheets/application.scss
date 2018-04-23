@@ -13,16 +13,5 @@
  *= require_self
  */
 
-$color-primary: #03a9f4 !default;
-$color-primary-dark: #0288d1 !default;
-$color-accent: #ffd740 !default;
-
-@import "components/resume";
-@import "components/resume_page_break";
-@import "components/resume_header";
-@import "components/resume_contact_info";
-@import "components/resume_work_item";
-@import "components/resume_education_item";
-
 @import "font-awesome-sprockets";
 @import "font-awesome";

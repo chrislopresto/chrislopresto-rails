@@ -1,6 +1,6 @@
 .ResumePageBreak {
   @media print {
-    padding-bottom: $resume-padding;
+    padding-bottom: 40px;
     page-break-before: always;
   }
   @media screen {

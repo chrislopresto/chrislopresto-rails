@@ -1,9 +1,9 @@
 .ResumeWorkItem {
-  .things {
+  & .things {
     margin: 0 0 8px;
   }
 
-  .when {
+  & .when {
     color: $md-grey-700;
     font-family: 'Roboto';
     font-size: 11px;
@@ -12,25 +12,25 @@
     text-transform: uppercase;
   }
 
-  .major,
-  .title {
+  & .major,
+  & .title {
     color: $md-grey-800;
     font-size: 16px;
     font-weight: bold;
     padding-left: 1px;
   }
 
-  .work-item-overview {
-    .synopsis {
+  & .work-item-overview {
+    & .synopsis {
       font-size: 14px;
       padding: 10px 20px;
     }
 
-    .learn {
+    & .learn {
       font-style: italic;
     }
 
-    .role {
+    & .role {
       margin-top: 4px;
     }
   }

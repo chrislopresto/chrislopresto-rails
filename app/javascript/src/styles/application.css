@@ -9,5 +9,10 @@
 
 @import 'tailwindcss/components';
 @import 'components/resume';
+@import 'components/resume-page-break';
+@import 'components/resume-header';
+@import 'components/resume-contact-info';
+@import 'components/resume-work-item';
+@import 'components/resume-education-item';
 
 @import 'tailwindcss/utilities';

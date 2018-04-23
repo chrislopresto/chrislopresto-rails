@@ -1,0 +1,47 @@
+.ResumeHeader {
+  @apply .bg-md-teal-400;
+  min-height: 160px;
+  position: relative;
+
+  @media print {
+    @apply .bg-md-teal-400 !important;
+  }
+}
+
+.ResumeHeader-name {
+  bottom: 40px;
+  font-size: 60px;
+  left: 40px;
+  position: absolute;
+
+  @media (max-width: 500px) {
+    font-size: 40px;
+    left: 20px;
+  }
+}
+
+.ResumeHeader-firstName {
+  @apply .text-md-grey-50;
+
+  @media print {
+    @apply .text-md-grey-50 !important;
+  }
+}
+
+.ResumeHeader-lastName {
+  @apply .text-md-grey-900;
+
+  @media print {
+    @apply .text-md-grey-900 !important;
+  }
+}
+
+.ResumeHeader-callout {
+  @apply .text-md-grey-900;
+  bottom: 10px;
+  font-family: 'Codystar', sans-serif;
+  font-size: 12px;
+  position: absolute;
+  right: 40px;
+  text-transform: uppercase;
+}

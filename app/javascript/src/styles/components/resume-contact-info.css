@@ -1,35 +1,34 @@
 .ResumeContactInfo {
-  border: solid 1px $md-teal-400;
+  @apply .border-md-teal-400 .border;
   border-radius: 2px;
   float: right;
   font-size: .8rem;
   margin: 0 0 20px 20px;
   line-height: 1.3rem;
 
-  .Resume & {
+  @nest .Resume & {
     padding: 15px 10px;
 
-    @media (max-width: $width-mobile-landscape) {
+    @media (max-width: 500px) {
       float: left;
       margin: 0 0 20px;
     }
   }
 
-  .fa {
+  & .fa {
     padding-right: 3px;
   }
 
-  li {
+  & li {
     display: block;
   }
 
-  li:before {
+  & li:before {
     content: '';
   }
 
-  &-item {
-    &--social {
-      font-size: .8rem;
-    }
-  }
+}
+
+.ResumeContactInfo-item--social {
+  font-size: .8rem;
 }

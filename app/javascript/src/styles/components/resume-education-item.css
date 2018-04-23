@@ -1,0 +1,43 @@
+.ResumeEducationItem {
+  margin: 20px 0;
+
+  & p {
+    margin: 0;
+    padding-bottom: 4px;
+  }
+}
+
+.ResumeEducationItem-item {
+  display: flex;
+  padding-top: 10px;
+}
+
+.ResumeEducationItem-logo {
+  flex-basis: 16%;
+
+  & img {
+    width: 90%;
+  }
+}
+
+.ResumeEducationItem-where {
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+.ResumeEducationItem-when {
+  flex-basis: 16%;
+  margin-top: 0;
+}
+
+.ResumeEducationItem-name--rutgers {
+  @nest .Resume &  {
+    color: #b20002;
+  }
+}
+
+.ResumeEducationItem-name--salesianum {
+  @nest .Resume & {
+    color: #021b4b;
+  }
+}
