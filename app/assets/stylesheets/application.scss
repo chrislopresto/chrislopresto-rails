@@ -17,17 +17,8 @@ $color-primary: #03a9f4 !default;
 $color-primary-dark: #0288d1 !default;
 $color-accent: #ffd740 !default;
 
-@import 'https://fonts.googleapis.com/css?family=Raleway';
-@import 'https://fonts.googleapis.com/css?family=Codystar';
-
-$preferred_font: 'Raleway', 'Helvetica', 'Arial', sans-serif !default;
-
 .page-content {
   padding: 0 16px;
-}
-
-body {
-    font-family: $preferred_font;
 }
 
 @import "components/resume";

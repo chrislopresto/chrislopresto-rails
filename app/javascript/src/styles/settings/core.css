@@ -1,0 +1,6 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+@import 'https://fonts.googleapis.com/css?family=Codystar';
+
+:root {
+  --fontPrimary: 'Raleway', 'Helvetica', 'Arial', sans-serif;
+}

@@ -1,0 +1,9 @@
+@import 'settings/core.css';
+
+@import 'generic/reset.css';
+
+@import 'elements/core.css';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
